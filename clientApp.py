@@ -19,7 +19,7 @@ def home():
 @cross_origin()
 def predictRoute():
     data = request.json['data']
-    result = textToSPeech.text2Speech(data)from wsgiref import simple_server
+    result = textToSPeech.text2Speech(data)
     return {"data" : result.decode("utf-8")}
 
 
